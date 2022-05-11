@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --black: #0d0d0d;
+  --white: #f2f2f2;
+  --brown: #401201;
+  --light-blue: #8090a6;
+  --dark-blue: #586173;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/** Utility Classes */
+
+.container {
+  width: min(100% - 2rem, 75em);
+  margin-inline: auto;
+}
+
+body {
+  background-color: var(--light-blue);
+  color: var(--black);
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  background-color: var(--dark-blue);
+  padding-block: 0.25em;
+}
