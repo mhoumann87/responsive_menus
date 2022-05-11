@@ -9,9 +9,33 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container flex">
+        <input
+          type="checkbox"
+          name="open-menu"
+          class="open-menu"
+          id="open-menu"
+        />
+
+        <label role="buton" for="open-menu" class="menu-icon-toggle">
+          <span class="sr-only">Menu</span>
+
+          <div class="menu-line line1 diagonal"></div>
+          <div class="menu-line horizontal"></div>
+          <div class="menu-line line2 diagonal"></div>
+        </label>
+
+        <nav class="primary-navigation" role="primary navigation">
+          <ul class="menu-list flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
         <div class="logo">
-          <h1>Pure CSS</h1>
+          <h1><span>Pure</span>CSS</h1>
         </div>
       </div>
     </header>
@@ -19,11 +43,40 @@
     <main>
       <div class="container">
         <h2>Pure CSS Slide-in Toggle Menu</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
+          maiores aliquid natus quisquam similique aut autem commodi nulla
+          maxime sed, culpa magnam deserunt numquam consectetur facilis minus
+          eveniet cum. Iusto suscipit odit ut vel voluptatem blanditiis dolor
+          enim nihil praesentium officia nisi maiores dolore, magni error
+          voluptate beatae porro aliquam quo culpa ipsa, saepe iste quae cum
+          quos. Deserunt dolorem quasi quae aut quia porro temporibus ipsam
+          itaque eveniet magni velit ducimus odit maxime obcaecati omnis, beatae
+          repellendus. Quam debitis explicabo quasi officiis suscipit eos
+          repellat repellendus consequuntur rerum repudiandae, obcaecati porro
+          commodi amet illo cumque esse, doloremque laborum incidunt blanditiis
+          qui. Repudiandae harum quod debitis neque ut sequi dolorem.
+        </p>
       </div>
     </main>
 
     <footer>
       <p>Made by Michael Houmann</p>
+      <p>
+        Based on
+        <a
+          href="https://twitter.com/plavookac"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Jelena Jovanovic's</a
+        >
+        <a
+          href="https://codepen.io/plavookac/pen/qomrMw"
+          target="_blank"
+          rel="noopener noreferrer"
+          >CodePen</a
+        >
+      </p>
     </footer>
   </body>
 </html>
