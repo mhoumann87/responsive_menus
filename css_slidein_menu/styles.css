@@ -148,8 +148,79 @@ input[type="checkbox"]:checked ~ .menu-icon-toggle > .diagonal.line2 {
   margin-top: -9px;
 }
 
+footer {
+  background-color: hsl(var(--dark-blue));
+  padding-block: 0.65em;
+}
+
+.content {
+  --dir: column;
+  --justify: center;
+}
+
+.social-icons {
+  --dir: row;
+  --gap: 1.5em;
+}
+
+.social-icons svg {
+  width: 1.2rem;
+}
+
+#github {
+  fill: #181717;
+}
+
+#linkedin {
+  fill: #0a66c2;
+}
+
+#twitter {
+  fill: #1da1f2;
+}
+
+#facebook {
+  fill: #1877f2;
+}
+
 @media (min-width: 45em) {
   header .logo h1 {
     font-size: 2.4rem;
+  }
+
+  .primary-navigation {
+    transform: translateX(0);
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-list {
+    --dir: row;
+  }
+
+  .menu-list li {
+    padding: 0;
+    justify-self: start;
+  }
+
+  .menu-icon-toggle {
+    display: none;
+  }
+
+  .content {
+    --dir: row;
+    --justify: space-between;
+  }
+
+  .social-icons {
+    --gap: 2rem;
+  }
+
+  .social-icons svg {
+    width: 1.8rem;
   }
 }
