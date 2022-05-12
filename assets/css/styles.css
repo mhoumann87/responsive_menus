@@ -1,0 +1,103 @@
+/** Get Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;700&display=swap");
+
+/** Project wide custom variables */
+:root {
+  /** Color */
+
+  /** Fonts */
+
+  --fs-900: 3.5rem;
+  --fs-800: 3rem;
+  --fs-700: 2.5rem;
+  --fs-400: 1.4rem;
+
+  --fw-thin: 200;
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+@media (min-width: 45rem) {
+  :root {
+    --fs-900: 5rem;
+    --fs-800: 4rem;
+    --fs-700: 2.8rem;
+  }
+}
+
+/** Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/** Utility classes */
+
+.flex {
+  display: flex;
+  flex-direction: var(--dir, column);
+  justify-content: var(--justify, center);
+  align-items: var(--align, center);
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  width: min(100% - 2rem, 75em);
+  margin-inline: auto;
+}
+
+/** Base Styles */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  font-family: "Mukta", sans-serif;
+}
+
+h1 {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-thin);
+}
+
+h2 {
+  font-size: var(--fs-800);
+}
+
+h3 {
+  font-size: var(--fs-700);
+}
+
+p,
+a {
+  font-size: var(--fs-400);
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons {
+  --dir: row;
+  --gap: 1.4rem;
+}
+
+.social-icons svg {
+  width: 2rem;
+}
