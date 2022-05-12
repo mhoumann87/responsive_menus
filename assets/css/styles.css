@@ -5,6 +5,12 @@
 :root {
   /** Color */
 
+  --black: 0, 0%, 5%;
+  --dark-gray: 11, 7%, 42%;
+  --light-gray: 168, 4%, 74%;
+  --dark-green: 169, 57%, 42%;
+  --light-green: 169, 69%, 52%;
+
   /** Fonts */
 
   --fs-900: 3.5rem;
@@ -33,10 +39,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 16px;
-}
-
 img,
 picture {
   max-width: 100%;
@@ -59,6 +61,30 @@ picture {
   margin-inline: auto;
 }
 
+.m-block {
+  margin: var(--mar, 1em);
+}
+
+.m-inline {
+  margin-inline: var(--mar, 1em);
+}
+
+.m {
+  margin: var(--mar, 1em);
+}
+
+.p-block {
+  padding: var(--pad, 1em);
+}
+
+.p-inline {
+  padding-inline: var(--pad, 1em);
+}
+
+.p {
+  padding: var(--pad, 1em);
+}
+
 /** Base Styles */
 
 body {
@@ -68,6 +94,16 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   font-family: "Mukta", sans-serif;
+  background-color: hsl(var(--light-gray));
+}
+
+p,
+a,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -88,11 +124,42 @@ a {
   font-size: var(--fs-400);
 }
 
+/** Components */
+
 header {
   margin: 0;
   padding: 0;
+  box-shadow: 0 10px 40px 5px hsl(var(--dark-green), 0.75);
+  -webkit-box-shadow: 0 10px 40px 5px hsl(var(--dark-green), 0.75);
+  -moz-box-shadow: 0 10px 40px 5px hsl(var(--dark-green), 0.75);
 }
 
+header,
+footer {
+  background-color: hsl(var(--dark-gray));
+}
+
+header h1 {
+  color: hsl(var(--light-gray));
+}
+
+main h2 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-thin);
+}
+
+.main {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.card {
+  background-color: hsl(--var(--light-gray));
+}
+
+.main {
+  margin-block: 1rem;
+}
 .social-icons {
   --dir: row;
   --gap: 1.4rem;
