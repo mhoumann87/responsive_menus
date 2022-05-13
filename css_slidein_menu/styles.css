@@ -29,6 +29,26 @@
   gap: var(--gap, 1rem);
 }
 
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 0.75em;
+  margin-top: 2em;
+  margin-right: 1em;
+  font-size: 1.4rem;
+  display: inline-block;
+  width: fit-content;
+  background-color: hsl(var(--brown));
+  color: hsl(var(--white));
+  cursor: pointer;
+  transition: all 250ms ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(var(--brown), 0.7);
+}
+
 /** Hide for everything except screen readers */
 .sr-only {
   position: absolute;
