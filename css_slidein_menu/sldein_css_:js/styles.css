@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/** Project wide custom properties */
+:root {
+  /* Colors */
+
+  /* Fonts */
+  --fs-reg: 1.4rem;
+  --fs-med: 2rem;
+  --fs-large: 2.8rem;
+}
